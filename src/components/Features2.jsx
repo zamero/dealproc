@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
-import feature5 from "../assets/images/feature5.jpg";
-import feature6 from "../assets/images/feature6.jpg";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import feature5 from "../assets/images/feature5.jpg"
+import feature6 from "../assets/images/feature6.jpg"
+import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon"
 
 export const Features2 = () => (
   <section className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
@@ -34,29 +34,27 @@ export const Features2 = () => (
 
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="custom-block-subtitle">
-              Make Data-Driven Decisions
-            </span>
+            <span className="custom-block-subtitle">Erobra Sökmotorerna</span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Issue tracking you’ll enjoy using
+              Öka din synlighet med vårt SEO-expertis
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
-              Monitor and track data issues with ease using our intuitive and
-              efficient issue tracking system. Stay ahead of potential problems
-              and improve your workflow.
+              Med vår avancerade SEO-strategi kommer din webbplats att ranka
+              högre på sökmotorernas resultatlistor. Öka trafiken, kundbasen och
+              din digitala närvaro.
             </p>
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Collaborative environment</span>
+                <span>Skräddarsydd SEO-optimering</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Smart issue categorization</span>
+                <span>Innehållsanalys och optimering</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Customizable notifications</span>
+                <span>Effektiv länkstrategi</span>
               </li>
             </ul>
           </div>
@@ -64,4 +62,4 @@ export const Features2 = () => (
       </div>
     </motion.div>
   </section>
-);
+)

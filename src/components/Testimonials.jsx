@@ -1,33 +1,33 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
-import { QuoteIcon } from "../assets/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
+import { QuoteIcon } from "../assets/icons/QuoteIcon"
+import testimonial1 from "../assets/images/testimonial1.png"
+import testimonial2 from "../assets/images/testimonial2.png"
+import testimonial3 from "../assets/images/testimonial3.png"
 
 const testimonialsData = [
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "Moses Amari",
+    customerTitle: "VD",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "Webbutvecklingsverket har varit en fantastisk partner för vårt företag. Deras expertis inom webbutveckling har hjälpt oss att skapa en modern och engagerande webbplats. Vi är så tacksamma för deras support och engagemang.",
     image: testimonial1,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "Anna Persson",
+    customerTitle: "VD",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "Samarbetet med Webbutvecklingsverket har verkligen boostat vårt företags online-närvaro. Deras skickliga team har inte bara byggt en fantastisk webbplats åt oss, utan de har också hjälpt oss med SEO-strategier som har ökat vår synlighet på nätet.",
     image: testimonial2,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "Erik Nilsson",
+    customerTitle: "CMO",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "Jag kan inte nog tacka Webbutvecklingsverket för deras enastående arbete. Vår nya webbplats är precis vad vi behövde för att marknadsföra vårt företag. Den är snygg, funktionell och har gett oss ett imponerande digitalt avtryck.",
     image: testimonial3,
   },
-];
+]
 
 export const Testimonials = () => (
   <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customDarkBg2 relative">
@@ -40,10 +40,10 @@ export const Testimonials = () => (
         transition={{ duration: 0.4, delay: 0.3 }}
       >
         <div className="custom-block-subtitle text-center mb-6">
-          Testimonials
+          Rekommendationer
         </div>
         <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
-          People like you love Tailcast
+          Entreprenörer som dig älskar Webbutvecklingsverket
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
@@ -75,4 +75,4 @@ export const Testimonials = () => (
       </motion.div>
     </div>
   </section>
-);
+)

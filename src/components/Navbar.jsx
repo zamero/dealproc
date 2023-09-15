@@ -1,19 +1,19 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { GithubIcon } from "../assets/icons/GithubIcon";
+import { TailcastLogo } from "../assets/logos/TailcastLogo"
+import { GithubIcon } from "../assets/icons/GithubIcon"
 
 const navbarLinks = [
-  { label: "Home", href: "#home", ariaLabel: "Home" },
-  { label: "Features", href: "#features", ariaLabel: "Features" },
-  { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "Feedback", href: "#feedback", ariaLabel: "Feedback" },
+  { label: "Hem", href: "#home", ariaLabel: "Home" },
+  { label: "Service", href: "#features", ariaLabel: "Features" },
+  // { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
+  { label: "Rekommendationer", href: "#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
-];
+]
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-customDarkBg1 lg:bg-customDarkBgTransparent z-40 lg:backdrop-blur-xl">
@@ -30,7 +30,7 @@ export const Navbar = () => {
                 <TailcastLogo />
               </div>
               <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
+                Webbutvecklingsverket
               </div>
             </div>
           </a>
@@ -60,18 +60,11 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="grow basis-0 justify-end hidden lg:flex">
-            <a
-              className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/matt765/Tidestream"
-              target="_blank"
-              aria-label="source code"
-            >
-              <GithubIcon />
-              <span className="pt-px">Source code</span>
-            </a>
-          </div>
+          <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
+            <div className="w-[100px] h-12 custom-button-colored mr-10 ">
+              Boka Tid
+            </div>
+          </a>
         </motion.div>
         <div
           className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2"
@@ -107,19 +100,10 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              <a
-                className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                <GithubIcon />
-                Source code
-              </a>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
     </nav>
-  );
-};
+  )
+}

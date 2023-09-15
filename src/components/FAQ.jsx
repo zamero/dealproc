@@ -1,28 +1,35 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from "react"
+import { motion } from "framer-motion"
 
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
+    question: "Hur köper man en hemsida?",
     answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+      "Att köpa en webbsida för ditt företag kan vara en viktig investering. För det första bör du identifiera dina behov och budget. Sedan kan du söka efter pålitliga webbyråer med erfarenhet av webbdesign. Du behöver även bestämma domännamn och webbhotell. Byrån kommer sedan att skapa och anpassa webbsidan enligt dina specifikationer. Efter lanseringen är det viktigt att ha ett avtal om underhåll och support för att säkerställa att din webbsida fungerar smidigt över tiden.",
   },
   {
-    question: "How to claim your 25% discount offer?",
-    answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
+    question: "Vad kostar en hemsida företag?",
+    answer: `Priset för att utveckla en företagswebbsida i Sverige kan variera kraftigt beroende på många faktorer. För att ge dig en grov uppskattning kan vi titta på några generella prisområden:
+
+    Enkel informativ webbsida: En grundläggande webbsida med begränsad funktionalitet och enkel design kan kosta från 5 000 kr till 20 000 kr, beroende på företagets behov och den valda webbyrån.
+    
+    Medelstor företagswebbplats: En webbsida med mer avancerade funktioner, anpassad design och innehållsproduktion kan kosta mellan 20 000 kr och 50 000 kr.
+    
+    Avancerad e-handelswebbplats: Om du planerar att sälja produkter online och behöver avancerade e-handelsfunktioner kan priset variera från 50 000 kr till flera hundratusen kronor, beroende på komplexiteten.
+    
+    Kontinuerlig underhåll och support: Det är viktigt att komma ihåg att kostnaderna för underhåll och support inte är en engångsavgift. Du kan behöva budgetera för månatliga eller årliga kostnader för att säkerställa att din webbsida fortsätter att fungera korrekt och håller sig uppdaterad.
+    
+    Det är dock viktigt att notera att dessa priser är generella riktlinjer och att faktiska kostnader kan variera avsevärt beroende på dina specifika behov och vilken webbyrå du väljer att arbeta med. Det bästa rådet är att kontakta flera webbyråer för att begära offerter och diskutera dina krav för att få en mer exakt uppfattning om priset för din företagswebbsida.`,
   },
   {
-    question: "What's your refund policy?",
-    answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
+    question: "Vad är skillnaden mellan en hemsida och en webbsida?",
+    answer: `Skillnaden mellan en "hemsida" och en "webbsida" är egentligen ganska subtil och används ibland synonymt, men det finns en distinkt åtskillnad. En "webbsida" är en övergripande term som avser en enskild sida på internet som innehåller information, text, bilder och/eller andra medieelement. Å andra sidan refererar "hemsida" vanligtvis till den första sidan eller startsidan av en webbplats.`,
   },
   {
-    question: "How to get support for the product?",
-    answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+    question: "Vad kan ett företag använda en webbsida till?",
+    answer: `En företagswebbsida kan användas för en mängd olika ändamål som gynnar verksamheten. För det första fungerar den som en digital närvaro och gör det möjligt för företaget att nå en bredare publik online. Den kan användas för att marknadsföra produkter eller tjänster, ge information om företagets historia och värderingar, underlätta kundkommunikation via kontaktformulär och livechatt, samt sälja varor eller tjänster genom en e-handelsplattform.`,
   },
-];
+]
 
 export const FAQ = () => (
   <section className="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden">
@@ -36,11 +43,9 @@ export const FAQ = () => (
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
           <p className="mb-7 custom-block-subtitle text-center">
-            Have any questions?
+            Har du några frågor?
           </p>
-          <h2 className="mb-16 custom-block-big-title text-center">
-            Frequently Asked Questions
-          </h2>
+          <h2 className="mb-16 custom-block-big-title text-center">FAQ</h2>
           <div className="mb-11 flex flex-wrap -m-1">
             {FAQData.map((item, index) => (
               <div className="w-full p-1">
@@ -57,10 +62,10 @@ export const FAQ = () => (
       </div>
     </motion.div>
   </section>
-);
+)
 
 const FAQBox = ({ defaultOpen, title, content }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+  const [isOpen, setIsOpen] = useState(defaultOpen)
 
   return (
     <div
@@ -100,5 +105,5 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         </svg>
       </div>
     </div>
-  );
-};
+  )
+}

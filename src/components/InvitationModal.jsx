@@ -1,8 +1,8 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"
 
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
-import { CloseIcon } from "../assets/icons/CloseIcon";
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon"
+import { CloseIcon } from "../assets/icons/CloseIcon"
+import { TailcastLogo } from "../assets/logos/TailcastLogo"
 
 export const InvitationModal = ({ setIsOpen }) => (
   <AnimatePresence>
@@ -50,7 +50,7 @@ export const InvitationModal = ({ setIsOpen }) => (
                   <TailcastLogo />
                 </div>
                 <div className="text-white font-['Inter'] font-bold text-3xl">
-                  Tailcast
+                  Webbutvecklingsverket
                 </div>
               </div>
 
@@ -87,4 +87,4 @@ export const InvitationModal = ({ setIsOpen }) => (
       </div>
     </motion.div>
   </AnimatePresence>
-);
+)
