@@ -60,11 +60,13 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
-            <div className="w-[100px] h-12 custom-button-colored mr-10 ">
-              Boka Tid
-            </div>
-          </a>
+          <div className="hidden lg:flex">
+            <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
+              <div className="w-[100px] h-12 custom-button-colored mr-10 ">
+                Boka Tid
+              </div>
+            </a>
+          </div>
         </motion.div>
         <div
           className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2"
@@ -100,6 +102,11 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
+              <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
+                <div className="w-[100px] h-12 custom-button-colored">
+                  Boka Tid
+                </div>
+              </a>
             </div>
           </motion.div>
         )}
