@@ -1,18 +1,18 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
-
 import { InvitationModal } from "./InvitationModal"
-import dashboard from "../assets/images/dashboard.jpg"
-
+import Lottie from "react-lottie-player"
+import lottieJson from "../assets/images/herolottie.json"
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <section
-      className="w-screen  flex justify-center items-center bg-customDarkBg1"
+      className="w-screen flex flex-row justify-center items-center bg-customDarkBg1"
       id="home"
     >
-      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
+      <script type="module">import "@lottiefiles/lottie-player";</script>
+      <div className="w-full md:w-[800px] xl:w-[700px] flex flex-col justify-start pt-16 md:pt-16 lg:pt-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,10 +29,10 @@ export const Hero = () => {
         >
           <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
             <span className="inline text-2xl md:hidden">
-              Din Pålitliga Webbdesignpartner för Entreprenörer
+              Din Pålitliga Webbutvecklingpartner för Entreprenörer
             </span>
             <span className="hidden md:inline">
-              Din Pålitliga Webbdesignpartner för Entreprenörer
+              Din Pålitliga Webbutvecklingpartner för Entreprenörer
             </span>
           </div>
         </motion.div>
@@ -50,7 +50,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
+          <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center items-center">
             <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
               <div className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0">
                 Boka tid
@@ -63,23 +63,11 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0, zIndex: 20 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         ></motion.div>
-        <div className="relative w-screen flex justify-center ">
-          <div className="custom-shape-divider-bottom-1665343298 hidden lg:block">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 300 90"
-              preserveAspectRatio="none"
-              className=" bg-customDarkBg2"
-            >
-              <path
-                d="M1200 0L0 0 598.97 114.72 1200 0z"
-                className="shape-fill custom-bg-dark1"
-              ></path>
-            </svg>
-          </div>
-        </div>
       </div>
+      <div className="w-full md:w-[800px] xl:w-[700px] hidden lg:block flex-col justify-start items-center pt-16 md:pt-16 lg:pt-20 text-center">
+        <Lottie loop animationData={lottieJson} play />
+      </div>
+
       {isModalOpen && (
         <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
       )}
