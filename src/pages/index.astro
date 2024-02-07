@@ -1,17 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import { Hero } from "../components/Hero.jsx"
-import { Navbar } from "../components/Navbar.jsx"
-import { Features1 } from "../components/Features1.jsx"
-import { Features2 } from "../components/Features2.jsx"
-import { Testimonials } from "../components/Testimonials.jsx"
-import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx"
-import { Pricing } from "../components/Pricing.jsx"
-import { FAQ } from "../components/FAQ.jsx"
-import { Brands } from "../components/Brands.jsx"
-import { Divider } from "../components/Divider"
-import { Footer } from "../components/Footer.jsx"
-import { ScrollUpButton } from "../components/ScrollUpButton"
+import { Hero } from "../components/automationagency/Hero.jsx"
+import { Navbar } from "../components/automationagency/Navbar.jsx"
+import { Features1 } from "../components/automationagency/Features1.jsx"
+import { Features2 } from "../components/automationagency/Features2.jsx"
+import { Testimonials } from "../components/automationagency/Testimonials.jsx"
+import { FeaturesDiagonal } from "../components/automationagency/FeaturesDiagonal.jsx"
+import { Pricing } from "../components/automationagency/Pricing.jsx"
+import { FAQ } from "../components/automationagency/FAQ.jsx"
+import { Brands } from "../components/automationagency/Brands.jsx"
+import { Divider } from "../components/automationagency/Divider"
+import { Footer } from "../components/automationagency/Footer.jsx"
+import { ScrollUpButton } from "../components/automationagency/ScrollUpButton"
 import "../styles/Theme.css"
 import "../styles/Diagonals.css"
 ---
@@ -21,6 +21,7 @@ import "../styles/Diagonals.css"
   <Hero client:load />
   <Divider />
   <Features2 client:load />
+  <Features1 client:load />
   <Testimonials client:load />
   <FeaturesDiagonal client:load />
   <FAQ client:load />
