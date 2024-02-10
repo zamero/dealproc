@@ -39,7 +39,7 @@ export const Features2 = () => (
             Efficiency Overdrive
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
-            We're not here to waste your time; we're here to multiply it. AI automation at Webbutveckligsverket is your shortcut to streamlined processes, less manual grunt work, and efficiency levels that would make a supercomputer blush.
+            We're not here to waste your time; we're here to multiply it. AI automation at Relumify is your shortcut to streamlined processes, less manual grunt work, and efficiency levels that would make a supercomputer blush.
             </p>
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">

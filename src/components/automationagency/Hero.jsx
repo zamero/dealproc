@@ -36,7 +36,7 @@ export const Hero = () => {
             </span>
           </div>
           <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-          Accelerate Results, Slash Costs, and Scale Up with Webbutvecklinngsverket
+          Accelerate Results, Slash Costs, and Scale Up with Relumify
           </div>
         </motion.div>
         <motion.div

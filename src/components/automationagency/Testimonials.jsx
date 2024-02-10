@@ -10,21 +10,21 @@ const testimonialsData = [
     customerName: "Moses Amari",
     customerTitle: "CEO",
     content:
-      "Working with Webbutveckligsverket was a game-changer for us. The efficiency boost from their AI automation solutions is unparalleled. Our processes are streamlined, and the cost savings have been a pleasant surprise. Highly recommended for businesses ready to conquer the future!",
+      "Working with Relumify was a game-changer for us. The efficiency boost from their AI automation solutions is unparalleled. Our processes are streamlined, and the cost savings have been a pleasant surprise. Highly recommended for businesses ready to conquer the future!",
     image: testimonial1,
   },
   {
     customerName: "Anna Persson",
     customerTitle: "CEO",
     content:
-      "AI automation by Webbutveckligsverket turned our financial landscape around. Faster results and substantial cost reductions have been a financial boon. Their team's commitment to precision and scalability is unmatched. It's not just a service; it's a strategic partnership.",
+      "AI automation by Relumify turned our financial landscape around. Faster results and substantial cost reductions have been a financial boon. Their team's commitment to precision and scalability is unmatched. It's not just a service; it's a strategic partnership.",
     image: testimonial2,
   },
   {
     customerName: "Erik Nilsson",
     customerTitle: "CMO",
     content:
-      "In the fast-paced world of marketing, speed and accuracy are paramount. Webbutvecklingsverket delivered on both fronts with their AI solutions. Our campaigns now move at lightning speed, and the improved accuracy in data processing has elevated our decision-making. A true innovation ally!",
+      "In the fast-paced world of marketing, speed and accuracy are paramount. Relumify delivered on both fronts with their AI solutions. Our campaigns now move at lightning speed, and the improved accuracy in data processing has elevated our decision-making. A true innovation ally!",
     image: testimonial3,
   },
 ]

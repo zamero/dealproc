@@ -37,11 +37,11 @@ export const Footer = () => {
                   <TailcastLogo />
                 </div>
                 <div className="text-white font-['Inter'] font-bold text-xl">
-                  Webbutvecklingsverket
+                 Relumify
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-              Accelerate Results, Slash Costs, and Scale Up with Webbutvecklingsverket
+              Accelerate Results, Slash Costs, and Scale Up with Relumify
               </p>
               {/* <div className="w-36 mx-auto lg:mx-0">
                 <a
@@ -120,7 +120,7 @@ export const Footer = () => {
         </div>
       </div>
       <p className="lg:text-center text-sm text-gray-400 border-[rgb(255,255,255,0.2)] hidden lg:block">
-        &copy; 2023. Webbutvecklingsverket.
+        &copy; 2023. Relumify.
       </p>
     </footer>
   )
