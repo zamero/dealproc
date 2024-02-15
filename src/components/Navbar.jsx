@@ -5,10 +5,10 @@ import { TailcastLogo } from "../assets/logos/TailcastLogo"
 import { GithubIcon } from "../assets/icons/GithubIcon"
 
 const navbarLinks = [
-  { label: "Hem", href: "#home", ariaLabel: "Home" },
+  { label: "Home", href: "#home", ariaLabel: "Home" },
   { label: "Service", href: "#features", ariaLabel: "Features" },
   // { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "Rekommendationer", href: "#feedback", ariaLabel: "Feedback" },
+  { label: "Testimonials", href: "#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ]
 
