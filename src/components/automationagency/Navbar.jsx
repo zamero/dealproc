@@ -61,7 +61,7 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         >
           <div className="hidden lg:flex">
-            <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
+            <a href="https://calendly.com/relumify/konsult-mote">
               <div className="w-[100px] h-12 custom-button-colored mr-10 ">
               Get Started
               </div>
@@ -102,7 +102,7 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
+              <a href="https://calendly.com/relumify/konsult-mote">
                 <div className="w-[100px] h-12 custom-button-colored">
                 Get Started
                 </div>

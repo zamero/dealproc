@@ -41,7 +41,7 @@ export const FeaturesDiagonal = () => {
               uppnå bättre resultat. Stärk din beslutsfattande process med
               avancerad analys.
             </p>
-            <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
+            <a href="https://calendly.com/relumify/konsult-mote">
               <div className="w-[210px] h-12 custom-button-colored mr-10 ">
                 Boka Tid
               </div>

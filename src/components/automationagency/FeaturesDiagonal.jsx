@@ -37,7 +37,7 @@ export const FeaturesDiagonal = () => {
             <p className="mb-16 text-customGrayText leading-loose">
             Dream big? Good. With our AI magic, scaling up isn’t a headache; it's a breeze. Grow your operations faster than you can say "success" without the usual growing pains.
             </p>
-            <a href="https://calendly.com/webbutvecklingsverket/konsult-mote">
+            <a href="https://calendly.com/relumify/konsult-mote">
               <div className="w-[210px] h-12 custom-button-colored mr-10 ">
               Get Started
               </div>
