@@ -4,23 +4,23 @@ import caseStudy1 from "../../assets/images/feature1.jpg"
 import caseStudy2 from "../../assets/images/feature2.jpg"
 import caseStudy3 from "../../assets/images/feature3.jpg"
 
-const caseStudiesData = [
-  {
+const caseStudiesData = {
+  "case-study-1": {
     title: "Case Study 1",
     description: "Description of case study 1",
     image: caseStudy1,
   },
-  {
+  "case-study-2": {
     title: "Case Study 2",
     description: "Description of case study 2",
     image: caseStudy2,
   },
-  {
+  "case-study-3": {
     title: "Case Study 3",
     description: "Description of case study 3",
     image: caseStudy3,
   },
-]
+};
 
 export { caseStudiesData };
 
@@ -41,21 +41,21 @@ export const CaseStudies = () => (
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 xl:px-0">
-          {caseStudiesData.map((caseStudy, index) => (
-            <a
-              href={`/case-studies/${caseStudy.title.toLowerCase().replace(/\s+/g, '-')}`}
-              className="custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-              key={`${caseStudy.title}-${index}`}
-            >
-              <img src={caseStudy.image} alt={caseStudy.title} className="mb-4 rounded-lg" />
-              <div className="custom-content-text-white font-medium mb-2">
-                {caseStudy.title}
-              </div>
-              <div className="custom-content-text-gray">
-                {caseStudy.description}
-              </div>
-            </a>
-          ))}
+          {Object.entries(caseStudiesData).map(([key, caseStudy]) => (
+    <a
+      href={`/case-studies/${key}`}
+      className="custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+      key={key}
+    >
+      <img src={caseStudy.image} alt={caseStudy.title} className="mb-4 rounded-lg" />
+      <div className="custom-content-text-white font-medium mb-2">
+        {caseStudy.title}
+      </div>
+      <div className="custom-content-text-gray">
+        {caseStudy.description}
+      </div>
+    </a>
+  ))}
         </div>
       </motion.div>
     </div>
