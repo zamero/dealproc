@@ -6,7 +6,7 @@ import { ScrollUpButton } from "../../components/automationagency/ScrollUpButton
 import "../../styles/Theme.css"
 import "../../styles/Diagonals.css"
 
-import caseStudiesData from "../../components/automationagency/CaseStudies.jsx";
+import { caseStudiesData } from "../../components/automationagency/CaseStudies.jsx";
 
 export async function getStaticPaths() {
   return caseStudiesData.map((caseStudy) => ({
