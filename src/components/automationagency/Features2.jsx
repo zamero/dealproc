@@ -34,27 +34,12 @@ export const Features2 = () => (
 
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="custom-block-subtitle">No more bottlenecks or unnecessary steps</span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
             Efficiency Overdrive
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
             We're not here to waste your time; we're here to multiply it. AI automation at Relumify is your shortcut to streamlined processes, less manual grunt work, and efficiency levels that would make a supercomputer blush.
             </p>
-            <ul className="mb-6 text-white">
-              <li className="mb-4 flex">
-                <CheckArrowIcon />
-                <span>Streamlined Processes</span>
-              </li>
-              <li className="mb-4 flex">
-                <CheckArrowIcon />
-                <span>Reduced Manual Work</span>
-              </li>
-              <li className="mb-4 flex">
-                <CheckArrowIcon />
-                <span>Maximizing Productivity</span>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

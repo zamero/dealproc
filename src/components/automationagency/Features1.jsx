@@ -21,29 +21,12 @@ export const Features1 = () => {
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span className="custom-block-subtitle">
-                Save money
-              </span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
               Cost Savings, Cha-Ching
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
               We're not just cutting-edge; we're cutting costs. Let AI automation trim the fat from manual labor and outdated processes, putting more dollars back into your bottom line.
               </p>
-              <ul className="mb-6 text-white">
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />
-                  <span>Save on labor expenses by automating repetitive tasks.</span>
-                </li>
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />
-                  <span>Efficient Resource Utilization</span>
-                </li>
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />
-                  <span>Budget-Friendly Automation</span>
-                </li>
-              </ul>
             </div>
           </div>
           <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
