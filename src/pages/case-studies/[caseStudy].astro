@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import { Navbar } from "../../components/automationagency/Navbar.jsx"
+import { Footer } from "../../components/automationagency/Footer.jsx"
+import { ScrollUpButton } from "../../components/automationagency/ScrollUpButton"
+import "../../styles/Theme.css"
+import "../../styles/Diagonals.css"
+
+const { caseStudy } = Astro.params;
+---
+
+<Layout title={`Case Study: ${caseStudy}`}>
+  <Navbar client:load />
+  <section class="w-full flex justify-center pt-10 mt-16 mb-16 lg:mb-32 bg-customDarkBg2 relative">
+    <div class="flex flex-col w-full lg:w-[1150px] justify-center">
+      <div class="custom-block-subtitle text-center mb-6">
+        {caseStudy}
+      </div>
+      <div class="custom-block-medium-title text-center mb-16 px-8 sm:px-24 md:px-48">
+        Detailed Overview of {caseStudy}
+      </div>
+      <div class="custom-content-text-gray text-center mb-8">
+        Here you can add more detailed information about the case study, including challenges, solutions, and results.
+      </div>
+    </div>
+  </section>
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
