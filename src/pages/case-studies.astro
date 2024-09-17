@@ -1,0 +1,27 @@
+---
+const caseStudies = [
+  { title: "Case Study 1", description: "Description of case study 1", link: "/case-studies/1" },
+  { title: "Case Study 2", description: "Description of case study 2", link: "/case-studies/2" },
+  { title: "Case Study 3", description: "Description of case study 3", link: "/case-studies/3" },
+  // Add more case studies as needed
+];
+---
+
+<html>
+  <head>
+    <title>Case Studies</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+      <h1 class="text-3xl font-bold text-center mb-8">Case Studies</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {caseStudies.map((study) => (
+          <a href={study.link} class="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <h2 class="text-xl font-semibold mb-2">{study.title}</h2>
+            <p class="text-gray-700">{study.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </body>
+</html>
