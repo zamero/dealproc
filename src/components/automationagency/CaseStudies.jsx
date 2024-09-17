@@ -20,8 +20,8 @@ const caseStudiesData = {
       images: [caseStudy2, caseStudy3],
     },
     section3: {
-      title: "Boosting Property Value with Precise Inventory Records",
-      content: "A complete inventory can significantly enhance a property’s value. Appraisers and buyers alike rely on accurate information about included furnishings and fixtures to make informed decisions. Our solution simplifies the process by using AI to capture and organize every item, helping sellers highlight the full value of their property.\n\nClosing Deals Faster with Instant Inventory Reports\nBuyers move quicker when they know exactly what they’re getting. By providing a detailed, automated inventory report early in the sales process, sellers eliminate uncertainty and speed up negotiations. Our system saves hours of manual work, ensuring every item is properly documented, so deals close faster.\n\nLegal and Insurance Peace of Mind\nA clear inventory doesn’t just help during the sale—it’s essential for legal protection and insurance claims. With every item accurately listed, both buyers and sellers avoid post-sale disputes and have proper documentation for future claims. Our solution offers security and peace of mind for everyone involved.",
+      title: "Closing Deals Faster with Instant Inventory Reports",
+      content: "Buyers move quicker when they know exactly what they’re getting. By providing a detailed, automated inventory report early in the sales process, sellers eliminate uncertainty and speed up negotiations. Our system saves hours of manual work, ensuring every item is properly documented, so deals close faster.",
       images: [caseStudy3, caseStudy1, caseStudy2, caseStudy3],
     },
   },
