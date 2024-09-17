@@ -41,7 +41,7 @@ export const CaseStudies = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 xl:px-0">
           {caseStudiesData.map((caseStudy, index) => (
             <div
-              className="custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
+              className="custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
               key={`${caseStudy.title}-${index}`}
             >
               <img src={caseStudy.image} alt={caseStudy.title} className="mb-4 rounded-lg" />
