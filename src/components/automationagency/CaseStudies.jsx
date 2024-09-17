@@ -9,6 +9,27 @@ const caseStudiesData = {
     title: "Case Study 1",
     description: "Description of case study 1",
     image: caseStudy1,
+    section1: {
+      subtitle: "Subtitle 1",
+      title: "Title 1",
+      content: "Content for section 1",
+      bullets: ["Bullet 1", "Bullet 2", "Bullet 3"],
+      images: [caseStudy1, caseStudy2, caseStudy3, caseStudy1],
+    },
+    section2: {
+      subtitle: "Subtitle 2",
+      title: "Title 2",
+      content: "Content for section 2",
+      bullets: ["Bullet 1", "Bullet 2", "Bullet 3"],
+      images: [caseStudy2, caseStudy3],
+    },
+    section3: {
+      subtitle: "Subtitle 3",
+      title: "Title 3",
+      content: "Content for section 3",
+      bullets: ["Bullet 1", "Bullet 2", "Bullet 3"],
+      images: [caseStudy3, caseStudy1, caseStudy2, caseStudy3],
+    },
   },
   "case-study-2": {
     title: "Case Study 2",
