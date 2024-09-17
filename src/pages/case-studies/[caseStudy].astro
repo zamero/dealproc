@@ -15,6 +15,9 @@ export async function getStaticPaths() {
 }
 
 const { caseStudy } = Astro.params;
+const currentCaseStudy = caseStudiesData.find(
+  (study) => study.title.toLowerCase().replace(/\s+/g, '-') === caseStudy
+);
 ---
 
 <Layout title="Relumify">
@@ -22,13 +25,13 @@ const { caseStudy } = Astro.params;
   <section class="w-full flex justify-center pt-10 mt-16 mb-16 lg:mb-32 bg-customDarkBg2 relative">
     <div class="flex flex-col w-full lg:w-[1150px] justify-center">
       <div class="custom-block-subtitle text-center mb-6">
-        {caseStudy}
+        {currentCaseStudy.title}
       </div>
       <div class="custom-block-medium-title text-center mb-16 px-8 sm:px-24 md:px-48">
-        Detailed Overview of {caseStudy}
+        Detailed Overview of {currentCaseStudy.title}
       </div>
       <div class="custom-content-text-gray text-center mb-8">
-        Here you can add more detailed information about the case study, including challenges, solutions, and results.
+        {currentCaseStudy.description}
       </div>
     </div>
   </section>
