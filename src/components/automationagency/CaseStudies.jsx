@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
 
-import caseStudy1 from "../../assets/images/feature1.jpg"
+import caseStudy1 from "../../assets/images/case1paragraph1.jpg"
 import caseStudy2 from "../../assets/images/feature2.jpg"
-import caseStudy3 from "../../assets/images/feature3.jpg"
+import caseStudy3 from "../../assets/images/case1paragraph1image2.png"
 
 const caseStudiesData = {
   "case-study-1": {
@@ -10,17 +10,17 @@ const caseStudiesData = {
     description: "Description of case study 1",
     image: caseStudy1,
     section1: {
-      title: "How Our AI Streamlines Property Inventory with a Single Photo",
-      content: "Our AI-driven solution simplifies the entire inventory process. Simply snap a picture of an item, and the AI instantly identifies and provides detailed information about it—everything from material and color to its condition.\n\nFor example, take a photo of a chair, and the AI will tell you: \"This is a swivel office chair, made of synthetic leather, in black, and in good condition.\" Whether it’s a chair, table, or even a flowerpot, our AI identifies the item and fills in the details, saving you hours of manual work.\n\nThe Benefits:\nTime-Saving: No need to manually document each item. Our AI does the heavy lifting for you.\nAccuracy: Get detailed, reliable descriptions of each item’s materials, condition, and more.\nEfficiency: Perfect for property managers needing to create quick, thorough inventory reports without the hassle.\nThis tool makes it easy for property sellers, managers, and real estate professionals to streamline the inventory process with just a photo.",
-      images: [caseStudy1, caseStudy2, caseStudy3, caseStudy1],
+      title: "Discover How AI Makes One Photo Unlock Instant, Detailed Inventory Insights",
+      content: "Our AI-driven solution simplifies the entire inventory process. Simply snap a picture of an item, and the AI instantly identifies and provides detailed information about it—everything from material and color to its condition. For example, take a photo of a chair, and the AI will tell you: `This is a swivel office chair, made of synthetic leather, in black, and in good condition`. Whether it's a chair, table, or even a flowerpot, our AI identifies the item and fills in the details, saving you hours of manual work.",
+      images: [caseStudy1, caseStudy3, caseStudy3, caseStudy3],
     },
     section2: {
-      title: "How Detailed Inventories Speed Up Property Sales",
+      title: "How Detailed Inventories Instantly Speed Up Property Sales",
       content: "When selling a property, clarity is key. Providing potential buyers with a clear, detailed inventory of what's included builds trust and streamlines the process. Our AI-powered inventory solution helps sellers quickly and accurately document every item, giving buyers confidence while avoiding disputes later on. With automation handling the tedious work, sellers save time and ensure nothing is missed.",
       images: [caseStudy2, caseStudy3],
     },
     section3: {
-      title: "Closing Deals Faster with Instant Inventory Reports",
+      title: "Close Deals Faster with Instant Inventory Reports",
       content: "Buyers move quicker when they know exactly what they’re getting. By providing a detailed, automated inventory report early in the sales process, sellers eliminate uncertainty and speed up negotiations. Our system saves hours of manual work, ensuring every item is properly documented, so deals close faster.",
       images: [caseStudy3, caseStudy1, caseStudy2, caseStudy3],
     },

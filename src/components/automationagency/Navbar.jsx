@@ -5,11 +5,12 @@ import { TailcastLogo } from "../../assets/logos/TailcastLogo"
 import { GithubIcon } from "../../assets/icons/GithubIcon"
 
 const navbarLinks = [
-  { label: "Home", href: "#home", ariaLabel: "Home" },
-  { label: "Service", href: "#features", ariaLabel: "Features" },
+  { label: "Home", href: "/#home", ariaLabel: "Home" },
+  { label: "Service", href: "/#features", ariaLabel: "Features" },
   // { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "Testimonials", href: "#feedback", ariaLabel: "Feedback" },
-  { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
+  { label: "Case studies", href: "/case-studies", ariaLabel: "Case studies" },
+  { label: "Testimonials", href: "/#feedback", ariaLabel: "Feedback" },
+  { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
 ]
 
 export const Navbar = () => {
