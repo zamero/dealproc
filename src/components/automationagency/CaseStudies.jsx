@@ -40,7 +40,8 @@ export const CaseStudies = () => (
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 xl:px-0">
           {caseStudiesData.map((caseStudy, index) => (
-            <div
+            <a
+              href={`/case-studies/${caseStudy.title.toLowerCase().replace(/\s+/g, '-')}`}
               className="custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
               key={`${caseStudy.title}-${index}`}
             >
@@ -51,7 +52,7 @@ export const CaseStudies = () => (
               <div className="custom-content-text-gray">
                 {caseStudy.description}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </motion.div>
