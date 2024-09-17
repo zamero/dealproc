@@ -1,4 +1,5 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import { Features1 } from "../components/automationagency/Features1";
 import { Features2 } from "../components/automationagency/Features2";
 import { Hero } from "../components/automationagency/Hero";
@@ -12,11 +13,9 @@ const caseStudies = [
 ];
 ---
 
-<html>
-  <body class="bg-gray-100">
-    <Hero />
-    <Features1 />
-    <Features2 />
-    <Testimonials />
-  </body>
-</html>
+<Layout>
+  <Hero />
+  <Features1 />
+  <Features2 />
+  <Testimonials />
+</Layout>
