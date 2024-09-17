@@ -23,32 +23,20 @@ const currentCaseStudy = caseStudiesData[caseStudy];
   <Navbar client:load />
   <section class="w-full flex justify-center pt-10 mt-16 mb-16 lg:mb-32 bg-customDarkBg2 relative">
     <div class="flex flex-col w-full lg:w-[1150px] justify-center">
-      <div class="custom-block-subtitle text-center mb-6">
+      <div class="custom-block-medium-title text-center mb-16 px-8 sm:px-24 md:px-48">
         {currentCaseStudy.title}
       </div>
-      <div class="custom-block-medium-title text-center mb-16 px-8 sm:px-24 md:px-48">
-        Detailed Overview of {currentCaseStudy.title}
-      </div>
       <div class="custom-content-text-gray text-center mb-8">
-        {currentCaseStudy.description}
+        Detailed Overview of {currentCaseStudy.title}
       </div>
 
       <!-- Section 1: Image Left, Text Right -->
-      <section class="w-full bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0">
-        <div class="flex flex-wrap items-center w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+      <section class="w-11/12 mx-auto bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0">
+        <div class="flex flex-wrap items-center md:pl-4 xl:pr-16 xl:pl-16">
           <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span class="custom-block-subtitle">{currentCaseStudy.section1.subtitle}</span>
               <h2 class="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">{currentCaseStudy.section1.title}</h2>
               <p class="mb-10 text-customGrayText leading-loose">{currentCaseStudy.section1.content}</p>
-              <ul class="mb-6 text-white">
-                {currentCaseStudy.section1.bullets.map((bullet) => (
-                  <li class="mb-4 flex">
-                    <CheckArrowIcon />
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
           <div class="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
@@ -73,8 +61,8 @@ const currentCaseStudy = caseStudiesData[caseStudy];
       </section>
 
       <!-- Section 2: Text Left, Image Right -->
-      <section class="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
-        <div class="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+      <section class="w-11/12 mx-auto bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
+        <div class="flex flex-wrap items-center md:pl-4 xl:pr-16 xl:pl-16">
           <div class="w-11/12 sm:w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 justify-center order-last lg:order-first">
             <div class="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
               <div class="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
@@ -87,38 +75,20 @@ const currentCaseStudy = caseStudiesData[caseStudy];
           </div>
           <div class="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
             <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span class="custom-block-subtitle">{currentCaseStudy.section2.subtitle}</span>
               <h2 class="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">{currentCaseStudy.section2.title}</h2>
               <p class="mb-12 text-customGrayText leading-loose">{currentCaseStudy.section2.content}</p>
-              <ul class="mb-6 text-white">
-                {currentCaseStudy.section2.bullets.map((bullet) => (
-                  <li class="mb-4 flex">
-                    <CheckArrowIcon />
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Section 3: Image Left, Text Right -->
-      <section class="w-full bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0">
-        <div class="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+      <section class="w-11/12 mx-auto bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0">
+        <div class="flex flex-wrap items-center md:pl-4 xl:pr-16 xl:pl-16">
           <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span class="custom-block-subtitle">{currentCaseStudy.section3.subtitle}</span>
               <h2 class="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">{currentCaseStudy.section3.title}</h2>
               <p class="mb-10 text-customGrayText leading-loose">{currentCaseStudy.section3.content}</p>
-              <ul class="mb-6 text-white">
-                {currentCaseStudy.section3.bullets.map((bullet) => (
-                  <li class="mb-4 flex">
-                    <CheckArrowIcon />
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
           <div class="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
