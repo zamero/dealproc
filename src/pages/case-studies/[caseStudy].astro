@@ -9,8 +9,8 @@ import "../../styles/Diagonals.css"
 import { caseStudiesData } from "../../components/automationagency/CaseStudies.jsx";
 
 export async function getStaticPaths() {
-  return caseStudiesData.map((caseStudy) => ({
-    params: { caseStudy: caseStudy.title.toLowerCase().replace(/\s+/g, '-') },
+  return Object.keys(caseStudiesData).map((key) => ({
+    params: { caseStudy: key },
   }));
 }
 
