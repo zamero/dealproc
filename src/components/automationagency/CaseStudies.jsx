@@ -25,16 +25,46 @@ const caseStudiesData = {
       images: [caseStudy3, caseStudy1, caseStudy2, caseStudy3],
     },
   },
-  "case-study-2": {
-    title: "Case Study 2",
-    description: "Description of case study 2",
-    image: caseStudy2,
-  },
-  "case-study-3": {
-    title: "Case Study 3",
-    description: "Description of case study 3",
-    image: caseStudy3,
-  },
+  // "case-study-2": {
+  //   title: "Case Study 2",
+  //   description: "Description of case study 2",
+  //   image: caseStudy1,
+  //   section1: {
+  //     title: "Title 2",
+  //     content: "Content for section 2",
+  //     images: [caseStudy1, caseStudy2, caseStudy3, caseStudy1],
+  //   },
+  //   section2: {
+  //     title: "Title 2",
+  //     content: "Content for section 2",
+  //     images: [caseStudy2, caseStudy3],
+  //   },
+  //   section3: {
+  //     title: "Title 3",
+  //     content: "Content for section 3",
+  //     images: [caseStudy3, caseStudy1, caseStudy2, caseStudy3],
+  //   },
+  // },
+  // "case-study-3": {
+  //   title: "Case Study 3",
+  //   description: "Description of case study 3",
+  //   image: caseStudy1,
+  //   section1: {
+  //     title: "Title 3",
+  //     content: "Content for section 3",
+  //     images: [caseStudy1, caseStudy2, caseStudy3, caseStudy1],
+  //   },
+  //   section2: {
+  //     title: "Title 2",
+  //     content: "Content for section 2",
+  //     images: [caseStudy2, caseStudy3],
+  //   },
+  //   section3: {
+  //     title: "Title 3",
+  //     content: "Content for section 3",
+  //     images: [caseStudy3, caseStudy1, caseStudy2, caseStudy3],
+  //   },
+  // },
 };
 
 export { caseStudiesData };
