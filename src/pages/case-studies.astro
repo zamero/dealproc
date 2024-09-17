@@ -7,21 +7,21 @@ const caseStudies = [
 ];
 ---
 
+---
+import Hero from '../components/automationagency/Hero.jsx';
+import Features1 from '../components/automationagency/Features1.jsx';
+import Features2 from '../components/automationagency/Features2.jsx';
+import Testimonials from '../components/automationagency/Testimonials.jsx';
+---
+
 <html>
   <head>
     <title>Case Studies</title>
   </head>
   <body class="bg-gray-100">
-    <div class="container mx-auto py-8">
-      <h1 class="text-3xl font-bold text-center mb-8">Case Studies</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {caseStudies.map((study) => (
-          <a href={study.link} class="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <h2 class="text-xl font-semibold mb-2">{study.title}</h2>
-            <p class="text-gray-700">{study.description}</p>
-          </a>
-        ))}
-      </div>
-    </div>
+    <Hero />
+    <Features1 />
+    <Features2 />
+    <Testimonials />
   </body>
 </html>
