@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { InvitationModal } from "././InvitationModal"
+import { InvitationModal } from "./InvitationModal"
 import Lottie from "react-lottie-player"
 import lottieJson from "../../assets/images/herolottie.json"
 export const Hero = () => {

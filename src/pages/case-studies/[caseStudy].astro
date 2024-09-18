@@ -3,11 +3,10 @@ import Layout from "../../layouts/Layout.astro"
 import { Navbar } from "../../components/automationagency/Navbar.jsx"
 import { Footer } from "../../components/automationagency/Footer.jsx"
 import { ScrollUpButton } from "../../components/automationagency/ScrollUpButton"
-import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon.jsx"
 import "../../styles/Theme.css"
 import "../../styles/Diagonals.css"
-
 import { caseStudiesData } from "../../components/automationagency/CaseStudies.jsx";
+import { CallToAction } from "../../components/automationagency/CallToAction.jsx"
 
 export async function getStaticPaths() {
   return Object.keys(caseStudiesData).map((key) => ({
@@ -23,17 +22,14 @@ const currentCaseStudy = caseStudiesData[caseStudy];
   <Navbar client:load />
   <div class="flex flex-col w-full lg:w-[1250px] justify-center mx-auto">
     <div class="flex flex-col w-full lg:w-[1250px] justify-center">
-      <div class="custom-block-medium-title text-center mb-16 px-8 sm:px-24 md:px-48">
-        {currentCaseStudy.title}
-      </div>
-      <div class="custom-content-text-gray text-center mb-8">
-        Detailed Overview of {currentCaseStudy.title}
+      <div class="mx-auto pt-24 lg:mx-auto w-11/12 md:w-2/4 lg:w-unset">
+        <h2 class="mt-6 mb-8 text-lg text-white lg:text-3xl ">{currentCaseStudy.title}</h2>
       </div>
 
       <!-- Section 1: Image Left, Text Right -->
-      <section class="w-full mx-auto bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0">
+      <section class="w-full mx-auto bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m ">
         <div class="flex flex-wrap items-center md:pl-4 xl:pr-16 xl:pl-16">
-          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+          <div class="w-full lg:w-1/2 lg:mb-0">
             <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <h2 class="mt-6 mb-8 text-lg lg:text-sm custom-block-big-title-case">{currentCaseStudy.section1.title}</h2>
               <p class="mb-10 text-customGrayText leading-loose">{currentCaseStudy.section1.content}</p>
@@ -56,6 +52,14 @@ const currentCaseStudy = caseStudiesData[caseStudy];
                 <img src={currentCaseStudy.section1.images[3]} alt="f4" class="rounded-xl custom-border-gray" />
               </div>
             </div>
+            <div class="w-1/2 lg:mt-20 pt-12 lg:pt-0 px-2 sm:hidden sm:inline-block relative">
+              <!-- <div class="mb-4 py-3 pl-3 pr-2 rounded-lg">
+                <img src={currentCaseStudy.section1.images[2]} alt="f3" class="rounded-xl custom-border-gray" />
+              </div> -->
+              <div class="py-3 pl-3 pr-2 rounded-lg absolute top-[-20] right-[-90%] transform -translate-y-[80%] scale-90">
+                <img src={currentCaseStudy.section1.images[3]} alt="f4" class="rounded-xl custom-border-gray w-full h-full" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -66,14 +70,14 @@ const currentCaseStudy = caseStudiesData[caseStudy];
           <div class="w-11/12 sm:w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 justify-center order-last lg:order-first">
             <div class="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
               <div class="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
-                <img src={currentCaseStudy.section2.images[0]} alt="f1" class="rounded-xl custom-border-gray" />
+                <img src={currentCaseStudy.section2.images[0]} alt="f1" class="rounded-2xl custom-border-gray" />
               </div>
-              <div class="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded">
+              <!-- <div class="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded">
                 <img src={currentCaseStudy.section2.images[1]} alt="f2" class="rounded-xl custom-border-gray" />
-              </div>
+              </div> -->
             </div>
           </div>
-          <div class="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
+          <div class="w-full lg:w-1/2 lg:mb-0 xl:pl-8">
             <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <h2 class="mt-6 mb-8 text-lg lg:text-sm custom-block-big-title-case">{currentCaseStudy.section2.title}</h2>
               <p class="mb-12 text-customGrayText leading-loose">{currentCaseStudy.section2.content}</p>
@@ -85,34 +89,35 @@ const currentCaseStudy = caseStudiesData[caseStudy];
       <!-- Section 3: Image Left, Text Right -->
       <section class="w-full mx-auto bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0">
         <div class="flex flex-wrap items-center md:pl-4 xl:pr-16 xl:pl-16">
-          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+          <div class="w-full lg:w-1/2 lg:mb-0">
             <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <h2 class="mt-6 mb-8 text-lg lg:text-sm custom-block-big-title-case">{currentCaseStudy.section3.title}</h2>
               <p class="mb-10 text-customGrayText leading-loose">{currentCaseStudy.section3.content}</p>
             </div>
           </div>
           <div class="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
-            <div class="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
+            <div class="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
               <div class="mb-4 py-3 pl-3 pr-2 rounded">
-                <img src={currentCaseStudy.section3.images[0]} alt="f1" class="rounded-xl custom-border-gray mx-auto sm:mx-unset" />
+                <img src={currentCaseStudy.section3.images[0]} alt="f1" class="rounded-2xl custom-border-gray" />
               </div>
-              <div class="py-3 pl-3 pr-2 rounded">
+              <!-- <div class="py-3 pl-3 pr-2 rounded">
                 <img src={currentCaseStudy.section3.images[1]} alt="f2" class="rounded-xl custom-border-gray mx-auto sm:mx-unset" />
-              </div>
+              </div> -->
             </div>
             <div class="w-1/2 lg:mt-20 pt-12 lg:pt-0 px-2 hidden sm:inline-block">
-              <div class="mb-4 py-3 pl-3 pr-2 rounded-lg">
+              <!-- <div class="mb-4 py-3 pl-3 pr-2 rounded-lg">
                 <img src={currentCaseStudy.section3.images[2]} alt="f3" class="rounded-xl custom-border-gray" />
-              </div>
-              <div class="py-3 pl-3 pr-2 rounded-lg">
+              </div> -->
+              <!-- <div class="py-3 pl-3 pr-2 rounded-lg">
                 <img src={currentCaseStudy.section3.images[3]} alt="f4" class="rounded-xl custom-border-gray" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
     </div>
   </div>
+  <CallToAction client:load/>
   <Footer />
   <ScrollUpButton client:load />
 </Layout>
