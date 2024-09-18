@@ -8,7 +8,6 @@ const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
   { label: "Service", href: "/#features", ariaLabel: "Features" },
   // { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "Case studies", href: "/case-studies", ariaLabel: "Case studies" },
   { label: "Testimonials", href: "/#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
 ]
@@ -55,6 +54,21 @@ export const Navbar = () => {
             ))}
           </div>
         </motion.div>
+        <div className="row flex">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="hidden lg:flex">
+            <a href="/case-studies">
+              <div className="w-[100px] h-12 custom-button-colored-smaller mr-5">
+              Case Studies
+              </div>
+            </a>
+          </div>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -63,12 +77,13 @@ export const Navbar = () => {
         >
           <div className="hidden lg:flex">
             <a href="https://calendly.com/relumify/konsult-mote">
-              <div className="w-[100px] h-12 custom-button-colored mr-10 ">
-              Get Started
+              <div className="w-[100px] h-12 custom-button-colored">
+              Let's Talk
               </div>
             </a>
           </div>
         </motion.div>
+        </div>
         <div
           className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2"
           onClick={() => setIsOpen(!isOpen)}
