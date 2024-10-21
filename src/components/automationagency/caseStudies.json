@@ -23,6 +23,27 @@
         "content": "Buyers move quicker when they know exactly what they’re getting. By providing a detailed, automated inventory report early in the sales process, sellers eliminate uncertainty and speed up negotiations. Our system saves hours of manual work, ensuring every item is properly documented, so deals close faster.",
         "images": ["/images/CloseMoreDeals.png"]
       }
-    }
+    },
+      "case-study-2": {
+        "title": "AI-Powered Competitor Research Streamlined with Exa.ai, Notion, and Multi-Agent Setup",
+        "description": "Leverage the power of AI agents to conduct in-depth competitor research, gathering essential data effortlessly and organizing it for actionable insights.",
+        "image": "/images/case2paragraph1image1.png",
+        "section1": {
+          "title": "Unlock the Power of Multi-Agent AI for Competitor Research",
+          "content": "This AI-driven workflow allows businesses to automate competitor research by utilizing a multi-agent setup. With Exa.ai, you can quickly identify your competitors and use AI agents to gather crucial information like company overview, product offerings, and customer reviews—all without lifting a finger. The result? A comprehensive, data-packed competitor analysis delivered straight to your Notion database, saving you countless hours of manual research.",
+          "images": [
+            "/images/case2paragraph1image1.png"
+          ]
+        },
+        "section2": {
+          "title": "Simplify Research with Automated AI-Driven Reports",
+          "content": "Gone are the days of sifting through endless websites to gather competitor data. Our AI agents scour the web, extracting key insights in real-time, and automatically compile a structured report. Using fewer nodes and intelligent workflows, this solution reduces complexity and accelerates your research process. Within minutes, you’ll have a detailed competitor report, ready for strategic decision-making.",
+          "images": ["/images/case2paragraph2image2.png"]
+        },
+        "section3": {
+          "title": "Seamless Integration with Notion for Effortless Organization",
+          "content": "Once the research is complete, all findings are automatically inserted into a Notion database. This integration allows you to easily organize, track, and analyze competitor data alongside your other business documentation. The workflow leverages tools like OpenAI for language processing, Exa.ai for AI-powered search, and SerpAPI for reliable web scraping, giving you a seamless and efficient solution for competitor analysis.",
+          "images": ["/images/case2paragraph3image3.png"]
+        }
+      }
   }
-  
