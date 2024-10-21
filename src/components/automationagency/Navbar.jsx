@@ -118,13 +118,23 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
+               <div className="lg:flex">
+            <a href="/case-studies">
+              <div className="navbar-link">
+              Case Studies
+              </div>
+            </a>
+          </div>
               <a href="https://calendly.com/relumify/konsult-mote">
                 <div className="w-[100px] h-12 custom-button-colored">
                 Get Started
                 </div>
               </a>
+              
+              
             </div>
           </motion.div>
+          
         )}
       </AnimatePresence>
     </nav>
