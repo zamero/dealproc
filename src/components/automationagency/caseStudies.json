@@ -27,7 +27,7 @@
       "case-study-2": {
         "title": "AI-Powered Competitor Research Streamlined with Exa.ai, Notion, and Multi-Agent Setup",
         "description": "Leverage the power of AI agents to conduct in-depth competitor research, gathering essential data effortlessly and organizing it for actionable insights.",
-        "image": "/images/case2paragraph1image1.png",
+        "image": "/images/case2paragraph3image3.png",
         "section1": {
           "title": "Unlock the Power of Multi-Agent AI for Competitor Research",
           "content": "This AI-driven workflow allows businesses to automate competitor research by utilizing a multi-agent setup. With Exa.ai, you can quickly identify your competitors and use AI agents to gather crucial information like company overview, product offerings, and customer reviews—all without lifting a finger. The result? A comprehensive, data-packed competitor analysis delivered straight to your Notion database, saving you countless hours of manual research.",
@@ -45,5 +45,106 @@
           "content": "Once the research is complete, all findings are automatically inserted into a Notion database. This integration allows you to easily organize, track, and analyze competitor data alongside your other business documentation. The workflow leverages tools like OpenAI for language processing, Exa.ai for AI-powered search, and SerpAPI for reliable web scraping, giving you a seamless and efficient solution for competitor analysis.",
           "images": ["/images/case2paragraph3image3.png"]
         }
-      }
-  }
+      },
+        "case-study-3": {
+          "title": "Invoice Data Extraction with LlamaParse and OpenAI",
+          "description": "This AI workflow automates the process of parsing and extracting data from PDF invoices. With this workflow, accounts and finance professionals can realize significant time and cost savings in their busy schedules.",
+          "image": "/images/case3paragraph1image1.png",
+          "section1": {
+            "title": "Streamlining Invoice Management with AI-powered Data Extraction",
+            "content": "This workflow will monitor an email inbox for incoming supplier invoices, automatically downloading attached PDFs and processing them using LlamaParse. LlamaParse is designed to convert complex PDF structures, such as tables, into markdown, making the data easy to process by large language models (LLMs). The result? Our AI agent delivers more accurate and reliable data extraction, which is then exported to Google Sheets for seamless reporting and organization.",
+            "images": [
+            "/images/case3paragraph1image1.png"
+          ]
+          },
+          "section2": {
+            "title": "Automated, Accurate Data Extraction and Export",
+            "content": "By converting PDFs to markdown, LlamaParse enhances the performance of the AI data extraction. Once processed by our AI agent, all invoice data is accurately captured and automatically exported to Google Sheets. This workflow not only saves valuable time but also ensures consistent data integrity across your financial systems. It can easily integrate with Outlook and Excel, or any other accounting software as per your requirements.",
+            "images": ["/images/case3paragraph2image2.png"]
+          },
+          "section3": {
+            "title": "Customizable Workflow for Your Business Needs",
+            "content": "This workflow is highly customizable. While it uses Gmail and Google Sheets, these can be replaced with equivalent tools such as Outlook or Excel. You can even redirect the output to your preferred accounting software, streamlining your specific business needs. To set up, all you need is a LlamaIndex.ai account for LlamaParse, an OpenAI account for the AI-driven extraction, and your chosen email and data storage service.",
+            "images": ["/images/case3paragraph3image3.png"]
+          }
+        },
+          "case-study-4": {
+            "title": "Automate Image Validation Tasks using AI Vision",
+            "description": "This AI workflow demonstrates how multimodal LLMs with AI vision can efficiently tackle complex image validation tasks, which are difficult to achieve with code and impractical for humans to perform at scale.",
+            "image": "/images/case4paragraph1image1.png",
+            "section1": {
+              "title": "Simplify Image Validation with AI-Powered Vision Tools",
+              "content": "In situations where users must submit images that meet certain criteria, such as passport photos or verification documents, manual validation is time-consuming and code-based solutions are often unreliable. Using multimodal LLMs with AI vision, this workflow automates the image validation process, ensuring accuracy and scalability. For example, in this case, we validate portraits based on passport photo requirements outlined by the UK government, confirming whether the images meet the necessary criteria for acceptance.",
+              "images": [
+                "/images/case4paragraph1image1.png"
+              ]
+            },
+            "section2": {
+              "title": "AI Image Processing from Google Drive to Validation",
+              "content": "This workflow begins by fetching portrait images from Google Drive. Images are resized to optimize for performance and then passed through an LLM using a binary message option, allowing the portrait to be evaluated. With a prompt containing criteria sourced directly from the official passport photo guidelines, the LLM determines if the portrait is valid or not. The output is structured as a JSON object, making it easy to extend or integrate into other workflows. This powerful automation frees your team from manual checks while ensuring high accuracy.",
+              "images": [
+                "/images/case4paragraph2image2.png"
+              ]
+            },
+            "section3": {
+              "title": "Customizable Workflow for Various Image Validation Use Cases",
+              "content": "While this demonstration focuses on portrait validation for passport photos, this workflow is highly adaptable. It can handle a wide range of image validation tasks, such as document verification, security footage analysis, and more. Don't need Google Gemini? The workflow is compatible with other multimodal LLMs like OpenAI's GPT-4 or Anthropic's Claude Sonnet. This flexibility ensures you can adjust it to fit your specific image validation needs, making it an indispensable tool for businesses handling visual data.",
+              "images": [
+                "/images/CloseMoreDeals.png"
+              ]
+            }
+          },
+            "case-study-5": {
+              "title": "AI-Powered Workflow to Automate Meeting Follow-Ups from Transcripts",
+              "description": "This workflow demonstrates how AI can automatically summarize meeting transcripts and handle the next steps, such as organizing follow-up meetings, saving you time and reducing the need for manual coordination between meetings.",
+              "image": "/images/case5paragraph1image1.png",
+              "section1": {
+                "title": "Effortlessly Organize Post-Meeting Actions with AI",
+                "content": "In today's fast-paced work environment, handling the next steps after meetings can become tedious and time-consuming. This workflow leverages AI to manage meeting follow-ups using transcripts, ensuring key tasks like scheduling new meetings or assigning action points are completed efficiently. By scanning your calendar for recent client or team meetings, the workflow fetches any available transcripts, sends them to an AI agent for analysis, and then generates a summary with key takeaways. It also identifies if follow-up meetings are required and proceeds to organize them for you.",
+                "images": [
+                  "/images/case5paragraph1image1.png"
+                ]
+              },
+              "section2": {
+                "title": "Automating Meeting Scheduling and Follow-Ups with AI",
+                "content": "After analyzing the meeting transcript, the AI agent can automatically create events on your calendar, handling the scheduling of follow-up meetings by selecting the best time, date, and location. Known attendees are added seamlessly, minimizing the manual effort needed to coordinate between busy schedules. This automation simplifies your workflow, allowing you to focus on high-value tasks while the AI handles routine post-meeting logistics.",
+                "images": [
+                  "/images/case5paragraph2image2.png"
+                ]
+              },
+              "section3": {
+                "title": "Customizing AI Meeting Automation for Your Needs",
+                "content": "This workflow is not limited to a specific calendar or transcription tool. Although it uses Google Calendar and requires transcript fetching permissions, it can be customized to integrate with other calendar platforms or video conferencing tools. Likewise, the AI agent's summarization and scheduling capabilities can be tailored to meet your business needs, whether it's organizing project updates, client check-ins, or internal team discussions. This adaptable solution helps you keep meetings on track with minimal effort.",
+                "images": [
+                  "/images/case5paragraph3image3.png"
+                ]
+              }
+            },
+              "case-study-6": {
+                "title": "AI-Driven Appointment Scheduling and Lead Follow-Up with Twilio, Cal.com, and Airtable",
+                "description": "This workflow demonstrates how an AI agent can streamline appointment booking and lead follow-up, helping businesses manage customer inquiries, schedule appointments, and re-engage potential leads—all without manual intervention.",
+                "image": "/images/case6paragraph1image1.png",
+                "section1": {
+                  "title": "Automate Appointment Scheduling and Lead Nurturing with AI",
+                  "content": "In today’s fast-paced environment, managing customer appointments and ensuring timely follow-ups is key to growing your business. This workflow utilizes an AI agent to automate the entire appointment process—from responding to customer inquiries to booking, rescheduling, or even canceling appointments. When a customer sends an inquiry via SMS, the AI agent interacts with them, checks availability, and schedules the appointment. If no appointment is booked immediately, the AI follows up with personalized messages, re-engaging leads and ensuring opportunities are not lost.",
+                  "images": [
+                    "/images/case6paragraph1image1.png"
+                  ]
+                },
+                "section2": {
+                  "title": "Seamless Communication and Lead Tracking with Twilio and Airtable",
+                  "content": "The workflow is triggered when a prospective customer sends an SMS inquiry, which is captured by a Twilio webhook. The customer's details and conversation history are logged in Airtable, serving as the central hub for tracking leads and ongoing interactions. The AI agent, powered by OpenAI, determines the next steps—whether it's booking an appointment or sending follow-up messages through Twilio. Additionally, the system runs daily checks to identify leads that have yet to convert, sending customized follow-ups to keep the conversation active and push for a booking.",
+                  "images": [
+                    "/images/case6paragraph2image2.png"
+                  ]
+                },
+                "section3": {
+                  "title": "Fully Customizable Workflow to Suit Your Business Needs",
+                  "content": "This workflow is highly adaptable to different business requirements. While the example uses Twilio for SMS communication and Airtable for lead management, you can easily swap these out for other services like HubSpot or your CRM of choice. The appointment scheduling is handled through Cal.com, but can also be integrated with other scheduling tools to suit your specific needs. By automating these processes, small businesses can boost efficiency, reduce manual workload, and capture more leads without needing additional manpower.",
+                  "images": [
+                    "/images/case6paragraph3image3.png"
+                  ]
+                }
+              }
+            
+        }
