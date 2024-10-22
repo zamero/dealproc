@@ -1,5 +1,31 @@
 {
-    "case-study-1": {
+  "appointment-scheduling-and-lead-follow-up": {
+    "title": "AI-Driven Appointment Scheduling and Lead Follow-Up with Twilio, Cal.com, and Airtable",
+    "description": "This workflow demonstrates how an AI agent can streamline appointment booking and lead follow-up, helping businesses manage customer inquiries, schedule appointments, and re-engage potential leads—all without manual intervention.",
+    "image": "/images/case6paragraph1image1.png",
+    "section1": {
+      "title": "Automate Appointment Scheduling and Lead Nurturing with AI",
+      "content": "In today’s fast-paced environment, managing customer appointments and ensuring timely follow-ups is key to growing your business. This workflow utilizes an AI agent to automate the entire appointment process—from responding to customer inquiries to booking, rescheduling, or even canceling appointments. When a customer sends an inquiry via SMS, the AI agent interacts with them, checks availability, and schedules the appointment. If no appointment is booked immediately, the AI follows up with personalized messages, re-engaging leads and ensuring opportunities are not lost.",
+      "images": [
+        "/images/case6paragraph1image1.png"
+      ]
+    },
+    "section2": {
+      "title": "Seamless Communication and Lead Tracking with Twilio and Airtable",
+      "content": "The workflow is triggered when a prospective customer sends an SMS inquiry, which is captured by a Twilio webhook. The customer's details and conversation history are logged in Airtable, serving as the central hub for tracking leads and ongoing interactions. The AI agent, powered by OpenAI, determines the next steps—whether it's booking an appointment or sending follow-up messages through Twilio. Additionally, the system runs daily checks to identify leads that have yet to convert, sending customized follow-ups to keep the conversation active and push for a booking.",
+      "images": [
+        "/images/case6paragraph2image2.png"
+      ]
+    },
+    "section3": {
+      "title": "Fully Customizable Workflow to Suit Your Business Needs",
+      "content": "This workflow is highly adaptable to different business requirements. While the example uses Twilio for SMS communication and Airtable for lead management, you can easily swap these out for other services like HubSpot or your CRM of choice. The appointment scheduling is handled through Cal.com, but can also be integrated with other scheduling tools to suit your specific needs. By automating these processes, small businesses can boost efficiency, reduce manual workload, and capture more leads without needing additional manpower.",
+      "images": [
+        "/images/case6paragraph3image3.png"
+      ]
+    }
+  },
+    "ai-driven-inventory-property-sales": {
       "title": "AI-driven solution simplifies the entire inventory process",
       "description": "Snap a picture of an item, and the AI instantly identifies everything from material and color to its condition.",
       "image": "/images/case1paragraph1image2.png",
@@ -24,7 +50,7 @@
         "images": ["/images/CloseMoreDeals.png"]
       }
     },
-      "case-study-2": {
+      "AI-Powered-Competitor-Research": {
         "title": "AI-Powered Competitor Research Streamlined with Exa.ai, Notion, and Multi-Agent Setup",
         "description": "Leverage the power of AI agents to conduct in-depth competitor research, gathering essential data effortlessly and organizing it for actionable insights.",
         "image": "/images/case2paragraph3image3.png",
@@ -46,7 +72,7 @@
           "images": ["/images/case2paragraph3image3.png"]
         }
       },
-        "case-study-3": {
+        "AI-Invoice-Data-Extraction": {
           "title": "Invoice Data Extraction with LlamaParse and OpenAI",
           "description": "This AI workflow automates the process of parsing and extracting data from PDF invoices. With this workflow, accounts and finance professionals can realize significant time and cost savings in their busy schedules.",
           "image": "/images/case3paragraph1image1.png",
@@ -68,7 +94,7 @@
             "images": ["/images/case3paragraph3image3.png"]
           }
         },
-          "case-study-4": {
+          "Automate-Image-Validation-Tasks-using-AI-Vision": {
             "title": "Automate Image Validation Tasks using AI Vision",
             "description": "This AI workflow demonstrates how multimodal LLMs with AI vision can efficiently tackle complex image validation tasks, which are difficult to achieve with code and impractical for humans to perform at scale.",
             "image": "/images/case4paragraph1image1.png",
@@ -94,7 +120,7 @@
               ]
             }
           },
-            "case-study-5": {
+            "AI-Meeting-Follow-Ups-from-Transcripts":{
               "title": "AI-Powered Workflow to Automate Meeting Follow-Ups from Transcripts",
               "description": "This workflow demonstrates how AI can automatically summarize meeting transcripts and handle the next steps, such as organizing follow-up meetings, saving you time and reducing the need for manual coordination between meetings.",
               "image": "/images/case5paragraph1image1.png",
@@ -119,32 +145,6 @@
                   "/images/case5paragraph3image3.png"
                 ]
               }
-            },
-              "case-study-6": {
-                "title": "AI-Driven Appointment Scheduling and Lead Follow-Up with Twilio, Cal.com, and Airtable",
-                "description": "This workflow demonstrates how an AI agent can streamline appointment booking and lead follow-up, helping businesses manage customer inquiries, schedule appointments, and re-engage potential leads—all without manual intervention.",
-                "image": "/images/case6paragraph1image1.png",
-                "section1": {
-                  "title": "Automate Appointment Scheduling and Lead Nurturing with AI",
-                  "content": "In today’s fast-paced environment, managing customer appointments and ensuring timely follow-ups is key to growing your business. This workflow utilizes an AI agent to automate the entire appointment process—from responding to customer inquiries to booking, rescheduling, or even canceling appointments. When a customer sends an inquiry via SMS, the AI agent interacts with them, checks availability, and schedules the appointment. If no appointment is booked immediately, the AI follows up with personalized messages, re-engaging leads and ensuring opportunities are not lost.",
-                  "images": [
-                    "/images/case6paragraph1image1.png"
-                  ]
-                },
-                "section2": {
-                  "title": "Seamless Communication and Lead Tracking with Twilio and Airtable",
-                  "content": "The workflow is triggered when a prospective customer sends an SMS inquiry, which is captured by a Twilio webhook. The customer's details and conversation history are logged in Airtable, serving as the central hub for tracking leads and ongoing interactions. The AI agent, powered by OpenAI, determines the next steps—whether it's booking an appointment or sending follow-up messages through Twilio. Additionally, the system runs daily checks to identify leads that have yet to convert, sending customized follow-ups to keep the conversation active and push for a booking.",
-                  "images": [
-                    "/images/case6paragraph2image2.png"
-                  ]
-                },
-                "section3": {
-                  "title": "Fully Customizable Workflow to Suit Your Business Needs",
-                  "content": "This workflow is highly adaptable to different business requirements. While the example uses Twilio for SMS communication and Airtable for lead management, you can easily swap these out for other services like HubSpot or your CRM of choice. The appointment scheduling is handled through Cal.com, but can also be integrated with other scheduling tools to suit your specific needs. By automating these processes, small businesses can boost efficiency, reduce manual workload, and capture more leads without needing additional manpower.",
-                  "images": [
-                    "/images/case6paragraph3image3.png"
-                  ]
-                }
-              }
+            }
             
         }
