@@ -19,7 +19,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-          Why manual labour when you can automate it with AI?
+          Lead the Future with AI-Driven Automation
           </div>
         </motion.div>
         <motion.div
@@ -29,14 +29,14 @@ export const Hero = () => {
         >
           <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
             <span className="inline text-2xl md:hidden">
-              Next-Level Automation, <br /> Turbocharge Your Success with AI
+              Unlock Unmatched Efficiency for your business with AI-driven automation.
             </span>
             <span className="hidden md:inline">
-              Next-Level Automation, <br /> Turbocharge Your Success with AI
+              Unlock Unmatched Efficiency for your business with AI-driven automation.
             </span>
           </div>
           <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-          Accelerate Results, Slash Costs, and Scale Up with Relumify
+          AI Automation Experts Reveal How to Reshape Your Business and Cut Costs by 40% in 90 Days — Don’t Get Left Behind!
           </div>
         </motion.div>
         <motion.div
